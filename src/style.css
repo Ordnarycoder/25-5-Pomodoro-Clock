@@ -1,0 +1,106 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#pomodoro {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  padding-top: 5px;
+}
+
+
+#break-label,
+#session-label,
+#timer-label {
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+  font-family: "Ubuntu";
+}
+
+#break-length,
+#session-length {
+  font-size: 2em;
+  font-weight: bold;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+#time-left {
+  font-size: 4em;
+  font-weight: bold;
+  color: #007bff;
+  margin: 20px 0;
+}
+
+
+button {
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-family: "Archivo";
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+#start_stop {
+  background: #28a745;
+}
+
+#start_stop:hover {
+  background: #218838;
+}
+
+#reset {
+  background: #dc3545;
+}
+
+#reset:hover {
+  background: #c82333;
+}
+
+
+@media (max-width: 600px) {
+  #pomodoro {
+    padding: 15px;
+  }
+
+  #time-left {
+    font-size: 3em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
+  #start_stop,
+  #reset {
+    font-size: 1em;
+    padding: 12px 24px;
+  }
+}
